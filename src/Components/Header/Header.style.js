@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
-	min-height: 3rem;
+	grid-area: ${props => props.$area};
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+
+	img {
+		width: 220px;
+	}
 `

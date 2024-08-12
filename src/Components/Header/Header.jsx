@@ -1,9 +1,12 @@
 import { HeaderStyle } from "./Header.style"
+import Logo from "../../assets/images/bagtanker/logo.png"
+import { TopNav } from "../TopNav/TopNav"
 
-export const Header = () => {
+export const Header = ({area}) => {
   return (
-	<HeaderStyle>
-		<h1>React Supabase Testplate</h1>
+	<HeaderStyle $area={area}>
+		<img src={Logo} alt="MedieSuset Logo" />
+		<TopNav />
 	</HeaderStyle>
   )
 }

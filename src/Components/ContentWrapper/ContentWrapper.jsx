@@ -4,7 +4,6 @@
  * @param {*} props
  * @returns
  */
-
 import { Link } from "react-router-dom"
 import { ContentWrapperStyle } from "./ContentWrapper.style"
 
@@ -28,6 +27,7 @@ export const ContentWrapper = ({title,subtitle,description,children}) => {
         </div>
       </section>
       <div>{children}</div>
+      <p><Link to="/">Tilbage til forsiden</Link></p>
     </ContentWrapperStyle>
   )
 }

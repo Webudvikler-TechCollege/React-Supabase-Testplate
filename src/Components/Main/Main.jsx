@@ -1,8 +1,8 @@
 import { MainStyle } from "./Main.style"
 
-export const Main = ({children}) => {
+export const Main = ({area, children}) => {
   return (
-	<MainStyle>
+	<MainStyle $area={area}>
 		{children}
 	</MainStyle>
   )

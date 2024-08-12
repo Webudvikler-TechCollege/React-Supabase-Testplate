@@ -1,8 +1,8 @@
 import { FooterStyle } from "./Footer.style"
 
-export const Footer = () => {
+export const Footer = ({area}) => {
   return (
-	<FooterStyle>
+	<FooterStyle $area={area}>
 		&copy; 2024
 	</FooterStyle>
   )

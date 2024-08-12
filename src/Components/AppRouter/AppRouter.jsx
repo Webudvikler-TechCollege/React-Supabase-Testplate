@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomePage } from "../../Pages/HomePage/HomePage";
 import { LineUpPage } from "../../Pages/LineUpPage/LineUpPage";
+import { FileUpload } from "../FileUpload/FileUpload";
 
 export const router = createBrowserRouter([
 	{
@@ -16,5 +17,9 @@ export const router = createBrowserRouter([
 			element: <LineUpPage />,
 		}
 	  ]
+	},
+	{
+	  path: '/uploadfile',
+	  element: <FileUpload />,
 	},
   ]);
