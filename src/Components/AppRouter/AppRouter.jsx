@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomePage } from "../../Pages/HomePage/HomePage";
 import { LineUpPage } from "../../Pages/LineUpPage/LineUpPage";
-import { FileUpload } from "../FileUpload/FileUpload";
+import { StoragePage } from "../../Pages/StoragePage/StoragePage";
 
 export const router = createBrowserRouter([
 	{
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
 	  ]
 	},
 	{
-	  path: '/uploadfile',
-	  element: <FileUpload />,
+	  path: '/storage',
+	  element: <StoragePage />,
 	},
   ]);
